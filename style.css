@@ -1,11 +1,12 @@
 :root {
-    --primary-cyan: hsl(180 66 49);
-    --primary-dark-violet: hsl(257 27% 26);
-    --secondary:  hsl(0 87 67);
-    --gray: hsl(0 0 75);
-    --grayish-violet: hsl(257 7 63);
-    --very-dark-blue: hsl(255 11 22);
-    --very-dark-violet: hsl(260 8 14);
+    --primary-cyan: hsl(180, 66%, 49%);
+    --primary-dark-violet: hsl(257, 27%, 26%);
+    --white: #fff;
+    --secondary:  hsl(0, 87%, 67%);
+    --gray: hsl(0, 0 ,75%);
+    --grayish-violet: hsl(257, 7%, 63%);
+    --very-dark-blue: hsl(255, 11%, 22%);
+    --very-dark-violet: hsl(260,8% ,14%);
 
     --ff-serif: 'Poppins', sans-serif;
 
@@ -24,6 +25,7 @@
 body {
     min-height: 100vh;
     line-height: 1.6;
+    font-family: var(--ff-serif);
 }
 
 
@@ -32,6 +34,7 @@ body {
 *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -63,7 +66,6 @@ select {
     font: inherit;
 }
 
-
 .container {
     padding: 2em 4em;
     margin: 0 auto;
@@ -73,6 +75,10 @@ select {
     color: var(--gray);
 }
 
+.text-white {
+    color: var(--white) ;
+}
+
 .fw-500 {
     font-weight: 500;
 }
@@ -80,3 +86,61 @@ select {
     font-weight: 700;
 }
 
+/* navigation */
+.logo {
+    top: 2em;
+    left: 2em;
+    position: relative;
+}
+
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 2em;
+    right: 1em;
+}
+
+/* mobile navigation */
+.mob-nav {
+    display: none;
+    margin: 3em auto 0;
+    background: var(--primary-dark-violet);
+    border-radius: 10px;
+    font-weight: 700;
+    height: 350px;
+    width: 85%;
+}
+
+.nav_list {
+    margin: 1em 0 0 ;
+    text-align: center;
+    height: 100%;
+}
+
+.nav_link {
+    padding: 1.5em 0 1em;
+    color: var(--white);
+}
+
+.hr {
+    border-top: 1px solid var(--gray);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ----- */
+
+
+/* buttons */
+button {
+    background-color: var(--primary-cyan);
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    color: var(--white);
+    height: 60px;
+    width: 260px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
