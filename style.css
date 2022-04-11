@@ -1,0 +1,82 @@
+:root {
+    --primary-cyan: hsl(180 66 49);
+    --primary-dark-violet: hsl(257 27% 26);
+    --secondary:  hsl(0 87 67);
+    --gray: hsl(0 0 75);
+    --grayish-violet: hsl(257 7 63);
+    --very-dark-blue: hsl(255 11 22);
+    --very-dark-violet: hsl(260 8 14);
+
+    --ff-serif: 'Poppins', sans-serif;
+
+    --fs-900: 9.375rem; 
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+    
+    
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+.container {
+    padding: 2em 4em;
+    margin: 0 auto;
+}
+
+.text-grey {
+    color: var(--gray);
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
